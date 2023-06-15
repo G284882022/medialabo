@@ -1,0 +1,19 @@
+h1{
+    border-bottom: solid blue;
+}
+h3{
+    border-bottom:solid red;
+}
+.Css{
+    border-bottom: solid blue;
+} 
+.JS{
+    border-bottom: solid yellow;
+}
+h2{
+    background-color: rgb(223, 237, 223);
+}
+h2+p,h3+p{
+    padding: 10px 15px 15px 5px;
+    color:blueviolet;
+}
