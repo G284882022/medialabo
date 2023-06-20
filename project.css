@@ -1,0 +1,37 @@
+body{
+    background-color:rgb(115, 162, 198);
+}
+h1{
+    
+}
+div{
+    padding:5px;
+	background-color: white;
+    /*width:100px;
+    height:120px;*/
+    margin: 10px 0 10px 10px;
+    border: solid;
+}
+div.line{
+
+}
+div.weather{
+
+}
+div.T{
+    background:linear-gradient(rgb(233, 99, 99),rgb(142, 142, 228));
+}
+LT{}
+HT{}
+div.humidity{
+
+}
+WS{
+
+}
+WD{
+
+}
+city{
+
+}
