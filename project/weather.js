@@ -55,3 +55,4 @@ console.log('湿度: '+data.main.humidity);
 console.log('風速: '+data.wind.speed);
 console.log('風向: '+data.wind.deg);
 console.log('都市名: '+data.name);
+
