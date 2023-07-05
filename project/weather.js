@@ -56,3 +56,54 @@ console.log('風速: '+data.wind.speed);
 console.log('風向: '+data.wind.deg);
 console.log('都市名: '+data.name);
 
+let div = document.querySelector('div#result');
+// div.style.borderr='';
+// div.style.backgroundColor='';
+// div.style.margin='';
+// div.style.padding='';
+// div.style.color='';
+
+let h1 = document.createElement('h1'); 
+h1.textContent='世界の天気（検索結果1件）';
+div.insertAdjacentElement('afterend', h1);
+
+div.remove();
+
+let divL =document.createElement('div');
+divL.textContent='緯度: '+data.coord.lon;
+h1.insertAdjacentElement('afterend', divL);
+
+let pL =document.createElement('p');
+pL.textContent='経度: '+data.coord.lat;
+divL.insertAdjacentElement('beforeend', pL);
+
+let divW =document.createElement('div');
+divW.textContent='天気: '+data.weather[0].description;
+divL.insertAdjacentElement('afterend', divW);
+
+let divT =document.createElement('div');
+divT.setAttribute('class','T');         //ここ以外クラスの指定をしていないから必要になったら適宜
+let pLT =document.createElement('p');
+pLT.textContent='最低気温: '+data.main.temp_max;
+divT.insertAdjacentElement('beforeend', pLT);
+let pHT =document.createElement('p');
+pHT.textContent='最高気温: '+data.main.temp_min;
+divT.insertAdjacentElement('beforeend', pHT);
+divW.insertAdjacentElement('afterend', divT);
+
+let divH =document.createElement('div');
+divH.textContent='湿度: '+data.main.humidity;
+divT.insertAdjacentElement('afterend', divH);
+
+let divWind =document.createElement('div');
+let pWs =document.createElement('p');
+pWs.textContent='風速: '+data.wind.speed;
+divWind.insertAdjacentElement('beforeend', pWs);
+let pWd =document.createElement('p');
+pWd.textContent='風向: '+data.wind.deg;
+divWind.insertAdjacentElement('beforeend', pWd);
+divH.insertAdjacentElement('afterend', divWind);
+
+let divC =document.createElement('div');
+divC.textContent='都市名: '+data.name;
+divWind.insertAdjacentElement('afterend', divC);
