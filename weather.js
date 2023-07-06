@@ -56,7 +56,21 @@ console.log('風速: '+data.wind.speed);
 console.log('風向: '+data.wind.deg);
 console.log('都市名: '+data.name);
 
+//hyoujiボタンが押された時のイベントハンドラ
+let b1 = document.querySelector('button#hyouji');
+b1.addEventListener('click',B1);
+
+
+//表示ボタンが押された時の処理
+function B1(){
+  let i = document.querySelector('input[name="kuni"]')
+  let kunimei = i.value;
+  console.log(kunimei);
+}
+
+//ここから下はHTMLを書き換えるJS
 let div = document.querySelector('div#result');
+//CSSの設定を削除したかったができなかった
 // div.style.borderr='';
 // div.style.backgroundColor='';
 // div.style.margin='';
