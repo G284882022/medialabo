@@ -1,10 +1,12 @@
 body{
     background-color:rgb(115, 162, 198);
 }
-/*
+
 h1{
+    font-family:cursive;
+    text-shadow: navy 1px 0 10px;
 }
-*/
+
 /*div:not(:first-child){/*:first-of-type でこの要素の最初以外*/
     div div{/*　div要素の子要素のdivに設定*/
     padding:5px;

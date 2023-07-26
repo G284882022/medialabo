@@ -94,7 +94,7 @@ function showResult(resp) {
   let div = document.querySelector('div#result');
 
   let h1 = document.createElement('h1'); 
-  h1.textContent='世界の天気（検索結果1件）';
+  h1.textContent='世界の天気（検索結果１件）';
   div.insertAdjacentElement('afterbegin', h1);
 
 
