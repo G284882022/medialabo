@@ -1,10 +1,12 @@
 body{
     background-color:rgb(115, 162, 198);
 }
+/*
 h1{
-    
 }
-div:not(first-child){
+*/
+/*div:not(:first-child){/*:first-of-type でこの要素の最初以外*/
+    div div{/*　div要素の子要素のdivに設定*/
     padding:5px;
 	background-color: white;
     /*width:100px;
@@ -12,15 +14,18 @@ div:not(first-child){
     margin: 10px 0 10px 10px;
     border: solid;
 }
+/*
 div.line{
 
 }
 div.weather{
 
 }
+*/
 div.T{
     background:linear-gradient(rgb(233, 99, 99),rgb(142, 142, 228));
 }
+/*
 LT{}
 HT{}
 div.humidity{
@@ -34,4 +39,21 @@ WD{
 }
 city{
 
+}
+*/
+
+/*
+div.result{
+    padding:'';
+	background-color: '';
+    width:100px;
+    height:120px;
+    margin: '';
+    border: '';
+}
+*/
+div#phototable > p > img {
+	display: block;
+	width: 20%;
+    border: solid black;   
 }

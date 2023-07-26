@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="project.css">
-    <script src="weather.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script><!--Aj-->
+    <script src="weather.js" defer></script><!--JS-->
     <title>世界の天気</title>
   </head>
   <body>
@@ -23,12 +24,24 @@
         <p class="WD">風向: 197</p>
       </div>
         <div class="city">都市名: 北京市</div>
-    
-        <div id="result"></div>は邪魔なので削除する
       -->
-    <label for="kuni">国名を記入してください</label>
-    <input type="text" name="kuni" size="10">
+    <label for="kuni">検索したい都市を選択してください:</label>
+    <select name="kuni" id="kuni">
+      <option value="360630" >カイロ （エジプト）</option>
+      <option value="524901" >モスクワ （ロシア）</option>
+      <option value="993800" >ヨハネスブルク （南アフリカ）</option>
+      <option value="1816670" >北京 （中華人民共和国）</option>
+      <option value="1850147" >東京 （日本）</option>
+      <option value="1880252" >シンガポール</option>
+      <option value="2147714" >シドニー （オーストラリア）</option>
+      <option value="2643743" >ロンドン （イギリス）</option>
+      <option value="2968815" >パリ （フランス）</option>
+      <option value="3451189" >リオデジャネイロ （ブラジル）</option>
+      <option value="5128581" >ニューヨーク （アメリカ合衆国）</option>
+      <option value="5368361" >ロサンゼルス （アメリカ合衆国）</option>
+    </select>
     <button id="hyouji">表示</button>
+
     <div id="result"></div>
 </body>
 </html>

@@ -1,7 +1,7 @@
 h1{
     border-bottom: solid blue;
 }
-h3{
+.HTML{
     border-bottom:solid red;
 }
 .Css{
@@ -13,7 +13,19 @@ h3{
 h2{
     background-color: rgb(223, 237, 223);
 }
-h2+p,h3+p{
+h2+p{
     padding: 10px 15px 15px 5px;
     color:blueviolet;
+}
+.Kuhu{
+    color:brown;
+}
+.Kusin{
+    color:chartreuse;
+}
+.Kyou{
+    color:cornflowerblue
+}
+.Kansou{
+    color:fuchsia;
 }
