@@ -109,6 +109,22 @@ function showResult(resp) {
   let divW =document.createElement('div');
   divW.textContent='天気: '+data.weather[0].description;
   divL.insertAdjacentElement('afterend', divW);
+  if("晴天"===data.weather[0].description){
+    divW.style.backgroundColor='#FF6633';   
+  }else if((data.weather[0].description.indexOf('曇') > -1)||(("雲"===data.weather[0].description))){
+    divW.style.backgroundColor='#BBBBBB';  
+  }else if("厚い雲"===data.weather[0].description){
+    divW.style.backgroundColor='#BBBBBB';  
+  }else if("霧"===data.weather[0].description){
+    divW.style.backgroundColor='#DDDDDD';  
+  }
+  else if("小雨"===data.weather[0].description){
+    divW.style.backgroundColor='#3333FF';  
+  }
+
+
+
+  
 
   let divT =document.createElement('div');
   divT.setAttribute('class','T');         //ここ以外クラスの指定をしていないから必要になったら適宜

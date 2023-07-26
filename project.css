@@ -23,7 +23,7 @@ div.weather{
 }
 */
 div.T{
-    background:linear-gradient(rgb(233, 99, 99),rgb(142, 142, 228));
+    background:linear-gradient(rgb(142, 142, 228),rgb(233, 99, 99));
 }
 /*
 LT{}

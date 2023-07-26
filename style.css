@@ -1,21 +1,36 @@
 h1{
-    border-bottom: solid blue;
-}
-.HTML{
-    border-bottom:solid red;
-}
-.Css{
-    border-bottom: solid blue;
-} 
-.JS{
-    border-bottom: solid yellow;
-}
-h2{
-    background-color: rgb(223, 237, 223);
+    border-bottom: solid black;
 }
 h2+p{
     padding: 10px 15px 15px 5px;
     color:blueviolet;
+}
+.HTML{
+    border-bottom:solid red;
+    background-color: rgb(255, 156, 156);
+}
+.HTML+p{
+    background-color: rgb(255, 200, 200);
+    color:black;
+}
+.Css{
+    border-bottom: solid blue;
+    background-color:rgb(156, 156, 255);
+} 
+.Css+p{
+    background-color:rgb(200, 200, 253);
+    color:black;
+}
+.JS{
+    border-bottom: solid yellow;
+    background-color:rgb(255, 255, 156);
+}
+.JS+p{
+    background-color: rgb(255, 255, 200);
+    color:black;
+}
+h2{
+    background-color: rgb(223, 237, 223);
 }
 .Kuhu{
     color:brown;
@@ -28,4 +43,4 @@ h2+p{
 }
 .Kansou{
     color:fuchsia;
-}
+}  
